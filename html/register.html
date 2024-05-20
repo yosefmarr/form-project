@@ -1,22 +1,29 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character encoding for the document -->
     <meta charset="utf-8" />
+    <!-- Viewport settings to ensure proper scaling on mobile devices -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
+    <!-- Title of the document -->
     <title>Register</title>
+    <!-- Bootstrap CSS for styling -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons for icons used in the document -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- Custom stylesheet for additional styling -->
     <link
       href="../css/styles.css"
       rel="stylesheet"
@@ -24,18 +31,23 @@
   </head>
   <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <main class="w-100 m-auto d-flex justify-content-center">
+      <!-- Card element to contain the registration form -->
       <div
         class="card"
         style="width: 40%; padding: 2rem"
       >
         <div class="card-body">
+          <!-- Registration form -->
           <form
             id="registerForm"
             class="needs-validation"
             novalidate
           >
+            <!-- User icon at the top of the form -->
             <i class="bi bi-person-plus register-icon"></i>
+            <!-- Row for first and last name input fields -->
             <div class="row g-3">
+              <!-- First name input field with floating label -->
               <div class="col-md-6">
                 <div class="form-floating mb-3">
                   <input
@@ -52,6 +64,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Last name input field with floating label -->
               <div class="col-md-6">
                 <div class="form-floating mb-3">
                   <input
@@ -69,6 +82,7 @@
                 </div>
               </div>
             </div>
+            <!-- Email input field with floating label -->
             <div class="form-floating mb-3">
               <input
                 type="email"
@@ -82,6 +96,7 @@
                 Please enter a valid email address.
               </div>
             </div>
+            <!-- Password input field with floating label -->
             <div class="form-floating mb-3">
               <input
                 type="password"
@@ -96,6 +111,7 @@
                 one uppercase letter, one lowercase letter, and one number.
               </div>
             </div>
+            <!-- Confirm password input field with floating label -->
             <div class="form-floating mb-3">
               <input
                 type="password"
@@ -107,6 +123,7 @@
               <label for="confirmPassword">Confirm Password</label>
               <div class="invalid-feedback">Passwords do not match.</div>
             </div>
+            <!-- Favorite color input field with floating label -->
             <div class="form-floating mb-3">
               <input
                 type="text"
@@ -121,6 +138,7 @@
                 Please enter your favorite color (max 100 characters).
               </div>
             </div>
+            <!-- Favorite song input field with floating label -->
             <div class="form-floating mb-3">
               <input
                 type="text"
@@ -135,11 +153,14 @@
                 Please enter your favorite song (max 100 characters).
               </div>
             </div>
+            <!-- Element to display registration error messages -->
             <div id="registerError"></div>
+            <!-- Link to the login page -->
             <p class="my-3">
               Already have an account?
               <a href="../index.html">Login here</a>
             </p>
+            <!-- Submit button for the form -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <button
                 class="btn btn-outline-primary w-25 py-2"
@@ -152,11 +173,14 @@
         </div>
       </div>
     </main>
+    <!-- Bootstrap Bundle JS for Bootstrap components functionality -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom JavaScript for form handling -->
     <script src="../js/register.js"></script>
   </body>
 </html>
+```
