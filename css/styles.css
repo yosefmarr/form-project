@@ -12,3 +12,44 @@ body {
   font-size: 5rem;
   color: #6c757d;
 }
+
+.user-body {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #1c1c1c;
+}
+
+.navbar a,
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.user-content {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#userName,
+#userDetails {
+  cursor: pointer;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.2);
+}
+
+.user-content h1 {
+  font-size: 600%;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
