@@ -2,3 +2,8 @@ html,
 body {
   height: 100%;
 }
+
+.login-icon {
+  font-size: 5rem;
+  color: #6c757d;
+}
