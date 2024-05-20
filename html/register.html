@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="../css/styles.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <main class="w-100 m-auto d-flex justify-content-center">
+      <div
+        class="card"
+        style="width: 40%; padding: 2rem"
+      >
+        <div class="card-body">
+          <form
+            id="registerForm"
+            class="needs-validation"
+            novalidate
+          >
+            <i class="bi bi-person-plus register-icon"></i>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                    maxlength="50"
+                  />
+                  <label for="firstName">First Name</label>
+                  <div class="invalid-feedback">
+                    Please enter your first name (max 50 characters).
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                    maxlength="50"
+                  />
+                  <label for="lastName">Last Name</label>
+                  <div class="invalid-feedback">
+                    Please enter your last name (max 50 characters).
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+                required
+              />
+              <label for="email">Email address</label>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <label for="password">Password</label>
+              <div class="invalid-feedback">
+                Password must be at least 8 characters long, contain at least
+                one uppercase letter, one lowercase letter, and one number.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                required
+              />
+              <label for="confirmPassword">Confirm Password</label>
+              <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteColor"
+                placeholder="Favorite Color"
+                required
+                maxlength="100"
+              />
+              <label for="favoriteColor">Favorite Color</label>
+              <div class="invalid-feedback">
+                Please enter your favorite color (max 100 characters).
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteSong"
+                placeholder="Favorite Song"
+                required
+                maxlength="100"
+              />
+              <label for="favoriteSong">Favorite Song</label>
+              <div class="invalid-feedback">
+                Please enter your favorite song (max 100 characters).
+              </div>
+            </div>
+            <div id="registerError"></div>
+            <p class="my-3">
+              Already have an account?
+              <a href="../index.html">Login here</a>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button
+                class="btn btn-outline-primary w-25 py-2"
+                type="submit"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/register.js"></script>
+  </body>
+</html>
